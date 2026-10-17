@@ -156,3 +156,4 @@
   }
   @media (max-width: 720px) { .float-tel { display: block; } .float-tel .btn { width: 100%; box-shadow: 0 6px 20px rgba(0,0,0,.35); } }
   img.photo { width: 100%; height: auto; object-fit: cover; display: block; }
+  .more-links a { margin-left: 1em; }
