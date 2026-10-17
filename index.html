@@ -20,11 +20,19 @@
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
+  "@id": "https://imprint283-boop.github.io/gekkoyoku/#restaurant",
   "name": "月光浴",
   "alternateName": "月光浴",
   "url": "https://imprint283-boop.github.io/gekkoyoku/",
   "description": "久留米・東町の個室のある居酒屋。はかた地どりの炭火焼き鳥、北海道直送の国産牛もつ鍋、はかた地どりの水炊き。完全個室、総席数80席。2004年創業。",
-  "image": ["https://imprint283-boop.github.io/gekkoyoku/images/og.jpg", "https://imprint283-boop.github.io/gekkoyoku/images/yakitori.jpg", "https://imprint283-boop.github.io/gekkoyoku/images/motsunabe.jpg", "https://imprint283-boop.github.io/gekkoyoku/images/mizutaki.jpg", "https://imprint283-boop.github.io/gekkoyoku/images/koshitsu.jpg", "https://imprint283-boop.github.io/gekkoyoku/images/gaikan.jpg"],
+  "image": [
+    "https://imprint283-boop.github.io/gekkoyoku/images/og.jpg",
+    "https://imprint283-boop.github.io/gekkoyoku/images/yakitori.jpg",
+    "https://imprint283-boop.github.io/gekkoyoku/images/motsunabe.jpg",
+    "https://imprint283-boop.github.io/gekkoyoku/images/mizutaki.jpg",
+    "https://imprint283-boop.github.io/gekkoyoku/images/koshitsu.jpg",
+    "https://imprint283-boop.github.io/gekkoyoku/images/gaikan.jpg"
+  ],
   "logo": "https://imprint283-boop.github.io/gekkoyoku/images/logo.jpg",
   "foundingDate": "2004-11",
   "telephone": "+81-942-35-8910",
@@ -36,22 +44,252 @@
     "postalCode": "830-0032",
     "addressCountry": "JP"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 33.3133041, "longitude": 130.5167326 },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.3133041,
+    "longitude": 130.5167326
+  },
   "hasMap": "https://www.google.com/maps/search/?api=1&query=%E6%9C%88%E5%85%89%E6%B5%B4%20%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82%E6%9D%B1%E7%94%BA25-3",
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    "opens": "18:00",
-    "closes": "24:00"
-  }],
-  "servesCuisine": ["居酒屋", "焼き鳥", "もつ鍋", "水炊き"],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "18:00",
+      "closes": "24:00"
+    }
+  ],
+  "servesCuisine": [
+    "居酒屋",
+    "焼き鳥",
+    "もつ鍋",
+    "水炊き"
+  ],
   "acceptsReservations": true,
+  "maximumAttendeeCapacity": 80,
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "月光浴のメニュー（抜粋・税込）",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "宴会コース",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "半身コース（2時間飲み放題付き）",
+            "offers": {
+              "@type": "Offer",
+              "price": "5000",
+              "priceCurrency": "JPY"
+            },
+            "description": "若鶏の半身あげ、刺身、焼鳥2種、締めのチャーハンなど。3名様から。"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "もつ鍋コース",
+            "offers": {
+              "@type": "Offer",
+              "price": "5500",
+              "priceCurrency": "JPY"
+            },
+            "description": "鮮魚盛り合わせ、炭火串二種、もつ鍋、締めのラーメン、甘味など。2名様から。5,500円〜。"
+          },
+          {
+            "@type": "MenuItem",
+            "name": "水炊きコース（2時間飲み放題付き）",
+            "offers": {
+              "@type": "Offer",
+              "price": "6500",
+              "priceCurrency": "JPY"
+            },
+            "description": "はかた地どりの水炊きのコース。3名様から70名様まで。"
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "焼鳥・炭火焼",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "おまかせ焼きとり5本セット",
+            "offers": {
+              "@type": "Offer",
+              "price": "1320",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ももみ串",
+            "offers": {
+              "@type": "Offer",
+              "price": "280",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "皮串",
+            "offers": {
+              "@type": "Offer",
+              "price": "200",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "つくね串",
+            "offers": {
+              "@type": "Offer",
+              "price": "250",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "久留米名物 骨付きカルビ",
+            "offers": {
+              "@type": "Offer",
+              "price": "1210",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "もも炭火焼き",
+            "offers": {
+              "@type": "Offer",
+              "price": "1020",
+              "priceCurrency": "JPY"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "鍋",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "醤油もつ鍋（2人前）",
+            "offers": {
+              "@type": "Offer",
+              "price": "3300",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "味噌もつ鍋（2人前）",
+            "offers": {
+              "@type": "Offer",
+              "price": "3520",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "辛味噌もつ鍋（2人前）",
+            "offers": {
+              "@type": "Offer",
+              "price": "3520",
+              "priceCurrency": "JPY"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "刺身・肴・揚げ物",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "馬赤身刺",
+            "offers": {
+              "@type": "Offer",
+              "price": "1650",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "お任せ刺身盛り（2人前）",
+            "offers": {
+              "@type": "Offer",
+              "price": "2420",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "明太だし巻き卵",
+            "offers": {
+              "@type": "Offer",
+              "price": "840",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "半身あげ",
+            "offers": {
+              "@type": "Offer",
+              "price": "1630",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "若鶏のからあげ",
+            "offers": {
+              "@type": "Offer",
+              "price": "730",
+              "priceCurrency": "JPY"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "こだわりの担々麺",
+            "offers": {
+              "@type": "Offer",
+              "price": "1210",
+              "priceCurrency": "JPY"
+            }
+          }
+        ]
+      }
+    ]
+  },
   "currenciesAccepted": "JPY",
   "amenityFeature": [
-    { "@type": "LocationFeatureSpecification", "name": "完全個室", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "掘りごたつの個室", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "宴会フロア（貸切可）", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "総席数80席", "value": true }
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "完全個室",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "掘りごたつの個室",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "宴会フロア（貸切可）",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "総席数80席",
+      "value": true
+    }
   ],
   "sameAs": [
     "https://tabelog.com/fukuoka/A4008/A400801/40008478/",
@@ -84,164 +322,8 @@
 }
 </script>
 
-<style>
-  :root {
-    --night: #14182b;
-    --night-2: #1c2140;
-    --moon: #f3e9c6;
-    --moon-dim: #c9bf9d;
-    --text: #ece8dc;
-    --muted: #a9a8b5;
-    --line: rgba(243, 233, 198, 0.18);
-    --accent: #e0b651;
-    --paper: #f7f3e8;
-    --ink: #22212b;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--night);
-    color: var(--text);
-    font-family: "Noto Sans JP", system-ui, sans-serif;
-    font-size: 16px;
-    line-height: 1.85;
-    -webkit-text-size-adjust: 100%;
-  }
-  img { max-width: 100%; display: block; }
-  a { color: var(--accent); }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
-
-  /* header */
-  .bar {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(20, 24, 43, 0.92);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--line);
-  }
-  .bar .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 12px; }
-  .logo img { width: 36px; height: 36px; border-radius: 50%; }
-  .logo { display: flex; align-items: center; gap: 10px; font-family: "Noto Serif JP", serif; font-size: 20px; color: var(--moon); text-decoration: none; letter-spacing: .08em; white-space: nowrap; }
-  .bar nav { display: flex; gap: 18px; font-size: 14px; }
-  .bar nav a { color: var(--muted); text-decoration: none; }
-  .bar nav a:hover { color: var(--moon); }
-  .tel-btn {
-    background: var(--accent); color: var(--night); font-weight: 700;
-    padding: 8px 14px; border-radius: 999px; text-decoration: none; font-size: 14px; white-space: nowrap;
-  }
-  @media (max-width: 720px) { .bar nav { display: none; } }
-
-  /* hero */
-  .hero {
-    position: relative; overflow: hidden;
-    padding: 96px 0 88px;
-    background:
-      linear-gradient(90deg, rgba(20,24,43,.94) 0%, rgba(20,24,43,.78) 55%, rgba(20,24,43,.35) 100%),
-      url(images/hero.jpg) center 40% / cover no-repeat, var(--night);
-  }
-  .hero .eyebrow { color: var(--moon-dim); font-size: 14px; letter-spacing: .2em; margin: 0 0 12px; }
-  .hero h1 {
-    font-family: "Noto Serif JP", serif; font-weight: 700; color: var(--moon);
-    font-size: clamp(34px, 7vw, 60px); line-height: 1.3; margin: 0 0 18px; letter-spacing: .06em;
-  }
-  .hero h1 small { display: block; font-size: .42em; color: var(--text); letter-spacing: .12em; margin-top: 6px; }
-  .hero .lead { max-width: 36em; color: var(--text); margin: 0 0 28px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 32px; padding: 0; list-style: none; }
-  .chips li { border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; font-size: 14px; color: var(--moon); }
-  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-    padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 700; min-height: 48px;
-  }
-  .btn.primary { background: var(--accent); color: var(--night); }
-  .btn.ghost { border: 1px solid var(--moon-dim); color: var(--moon); }
-
-  /* sections */
-  section { padding: 72px 0; border-top: 1px solid var(--line); }
-  h2 {
-    font-family: "Noto Serif JP", serif; color: var(--moon); font-size: clamp(24px, 4.5vw, 32px);
-    margin: 0 0 8px; letter-spacing: .06em;
-  }
-  .sub { color: var(--muted); margin: 0 0 36px; }
-
-  .dishes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  @media (max-width: 860px) { .dishes { grid-template-columns: 1fr; } }
-  .dish { background: var(--night-2); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
-  .photo {
-    aspect-ratio: 4 / 3; background: #262b4d center / cover no-repeat;
-    display: flex; align-items: flex-end;
-  }
-  .photo span { font-size: 12px; color: var(--muted); padding: 8px 12px; }
-  .dish .body { padding: 20px 22px 24px; }
-  .dish h3 { font-family: "Noto Serif JP", serif; color: var(--moon); font-size: 21px; margin: 0 0 8px; }
-  .dish p { margin: 0 0 10px; }
-  .dish .note { font-size: 14px; color: var(--muted); margin: 0; }
-
-  .gallery { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
-  @media (max-width: 860px) { .gallery { grid-template-columns: repeat(2, 1fr); } .gallery figure:first-child { grid-column: 1 / -1; } }
-  .gallery figure { margin: 0; }
-  .gallery img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 12px; }
-  .gallery figure:first-child img { aspect-ratio: auto; height: 100%; max-height: 420px; }
-  .gallery figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
-  .floor { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; }
-  @media (max-width: 860px) { .floor { grid-template-columns: 1fr 1fr; } .floor img:first-child { grid-column: 1 / -1; } }
-  .floor img { width: 100%; height: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 12px; }
-  .floor img:first-child { aspect-ratio: auto; max-height: 520px; }
-  .room-sub { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; margin-top: 12px; }
-  .room-sub img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
-  .front { margin: 24px 0 0; }
-  .front img { width: 100%; max-height: 360px; object-fit: cover; border-radius: 14px; }
-  .front figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
-  .room { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); gap: 32px; align-items: center; }
-  @media (max-width: 860px) { .room { grid-template-columns: minmax(0,1fr); } }
-  .room .photo { border-radius: 14px; aspect-ratio: 16 / 10; }
-  .facts { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
-  .facts li { background: var(--night-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px; text-align: center; }
-  .facts b { display: block; font-family: "Noto Serif JP", serif; color: var(--moon); font-size: 22px; }
-  .facts small { color: var(--muted); font-size: 13px; }
-
-  /* menu & course on paper */
-  .paper { background: var(--paper); color: var(--ink); }
-  .paper h2 { color: var(--ink); }
-  .paper .sub { color: #6b6875; }
-  .courses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 48px; }
-  @media (max-width: 860px) { .courses { grid-template-columns: 1fr; } }
-  .course { background: #fff; border: 1px solid #e3dccb; border-radius: 14px; padding: 22px; }
-  .course h3 { margin: 0 0 4px; font-family: "Noto Serif JP", serif; font-size: 19px; }
-  .price { font-size: 26px; font-weight: 700; color: #8a5a00; margin: 0 0 6px; }
-  .price small { font-size: 14px; color: #6b6875; font-weight: 500; }
-  .course p { margin: 0; font-size: 15px; }
-  .menu { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 48px; }
-  @media (max-width: 720px) { .menu { grid-template-columns: 1fr; } }
-  .menu h3 { grid-column: 1 / -1; margin: 24px 0 4px; font-family: "Noto Serif JP", serif; font-size: 18px; border-bottom: 1px solid #d8d0bc; padding-bottom: 4px; }
-  .item { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dotted #d8d0bc; padding: 6px 0; }
-  .item span:last-child { white-space: nowrap; }
-  .fine { font-size: 13px; color: #6b6875; margin-top: 20px; }
-
-  /* faq */
-  details { border-bottom: 1px solid var(--line); padding: 16px 0; }
-  summary { cursor: pointer; font-weight: 700; color: var(--moon); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "＋"; color: var(--accent); }
-  details[open] summary::after { content: "－"; }
-  details p { margin: 10px 0 0; }
-
-  /* access */
-  .info { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-  @media (max-width: 860px) { .info { grid-template-columns: 1fr; } }
-  dl { margin: 0; display: grid; grid-template-columns: 7em 1fr; gap: 10px 16px; }
-  dt { color: var(--muted); }
-  dd { margin: 0; }
-  .map { border: 0; width: 100%; height: 320px; border-radius: 14px; background: var(--night-2); }
-
-  footer { padding: 36px 0 96px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); text-align: center; }
-
-  .float-tel {
-    position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 20;
-    display: none; text-align: center;
-  }
-  @media (max-width: 720px) { .float-tel { display: block; } .float-tel .btn { width: 100%; box-shadow: 0 6px 20px rgba(0,0,0,.35); } }
-</style>
+<link rel="preload" as="image" href="images/hero.jpg">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -255,6 +337,7 @@
       <a href="#enkai">宴会フロア</a>
       <a href="#menu">コース・メニュー</a>
       <a href="#faq">よくある質問</a>
+      <a href="enkai/">宴会・忘年会</a>
       <a href="#access">アクセス</a>
     </nav>
     <a class="tel-btn" href="tel:0942358910">電話で予約</a>
@@ -283,7 +366,7 @@
       <p class="sub">炭火の焼き鳥と、二つの鍋。市場直送の鮮魚や一品料理もそろえています。</p>
       <div class="dishes">
         <article class="dish">
-          <div class="photo" style="background-image:url(images/yakitori.jpg)" role="img" aria-label="炭火で焼いている焼き鳥"></div>
+          <img class="photo" src="https://imprint283-boop.github.io/gekkoyoku/images/yakitori.jpg" alt="炭火で焼いている焼き鳥" width="1000" height="750" loading="lazy">
           <div class="body">
             <h3>はかた地どりの焼き鳥</h3>
             <p>炭火で一本ずつ焼き上げます。迷ったら、おまかせ焼きとり5本セット（税込1,320円）から。</p>
@@ -291,7 +374,7 @@
           </div>
         </article>
         <article class="dish">
-          <div class="photo" style="background-image:url(images/motsunabe.jpg)" role="img" aria-label="湯気の立つもつ鍋"></div>
+          <img class="photo" src="https://imprint283-boop.github.io/gekkoyoku/images/motsunabe.jpg" alt="湯気の立つもつ鍋" width="1000" height="750" loading="lazy">
           <div class="body">
             <h3>北海道直送 国産牛もつ鍋</h3>
             <p>基本はあごだしの醤油。その醤油を特製の味噌で仕上げた味噌、さらに辛みと旨味を加えた辛味噌の3種類。締めはラーメン、雑炊もできます。</p>
@@ -299,7 +382,7 @@
           </div>
         </article>
         <article class="dish">
-          <div class="photo" style="background-image:url(images/mizutaki.jpg)" role="img" aria-label="はかた地どりの水炊き"></div>
+          <img class="photo" src="https://imprint283-boop.github.io/gekkoyoku/images/mizutaki.jpg" alt="はかた地どりの水炊き" width="1000" height="750" loading="lazy">
           <div class="body">
             <h3>はかた地どりの水炊き</h3>
             <p>はかた地どりのガラを2日間炊いたスープに、ぶつ切りの肉と手作りのつみれ。締めは担々麺、雑炊もできます。</p>
@@ -315,11 +398,11 @@
       <h2>炭火と鮮魚と、一品料理</h2>
       <p class="sub">炭火焼きや市場直送の鮮魚、季節の一品も。焼酎・日本酒もそろえています。</p>
       <div class="gallery">
-        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/sanma.jpg" alt="炭火で焼く秋刀魚" loading="lazy"><figcaption>秋刀魚の炭火焼き（季節の一品）</figcaption></figure>
-        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/sashimi.jpg" alt="お任せ刺身盛り" loading="lazy"><figcaption>お任せ刺身盛り</figcaption></figure>
-        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/momo.jpg" alt="炭火で焼く鶏肉" loading="lazy"><figcaption>炭火焼き</figcaption></figure>
-        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/makigushi.jpg" alt="焼く前の野菜巻き串" loading="lazy"><figcaption>野菜巻き串（焼く前）</figcaption></figure>
-        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/shochu.jpg" alt="焼酎のボトルとグラス" loading="lazy"><figcaption>焼酎・日本酒</figcaption></figure>
+        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/sanma.jpg" width="900" height="1200" alt="炭火で焼く秋刀魚" loading="lazy"><figcaption>秋刀魚の炭火焼き（季節の一品）</figcaption></figure>
+        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/sashimi.jpg" width="900" height="1085" alt="お任せ刺身盛り" loading="lazy"><figcaption>お任せ刺身盛り</figcaption></figure>
+        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/momo.jpg" width="900" height="1200" alt="炭火で焼く鶏肉" loading="lazy"><figcaption>炭火焼き</figcaption></figure>
+        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/makigushi.jpg" width="900" height="666" alt="焼く前の野菜巻き串" loading="lazy"><figcaption>野菜巻き串（焼く前）</figcaption></figure>
+        <figure><img src="https://imprint283-boop.github.io/gekkoyoku/images/shochu.jpg" width="900" height="1200" alt="焼酎のボトルとグラス" loading="lazy"><figcaption>焼酎・日本酒</figcaption></figure>
       </div>
     </div>
   </section>
@@ -327,10 +410,10 @@
   <section id="koshitsu">
     <div class="wrap room">
       <div>
-        <div class="photo" style="background-image:url(images/koshitsu.jpg)" role="img" aria-label="掘りごたつの個室"></div>
+        <img class="photo" src="https://imprint283-boop.github.io/gekkoyoku/images/koshitsu.jpg" alt="掘りごたつの個室" width="1200" height="1600" loading="lazy">
         <div class="room-sub">
-          <img src="https://imprint283-boop.github.io/gekkoyoku/images/horigotatsu.jpg" alt="鍋の準備ができた掘りごたつの個室" loading="lazy">
-          <img src="https://imprint283-boop.github.io/gekkoyoku/images/table-room.jpg" alt="窓のある個室のテーブル席" loading="lazy">
+          <img src="https://imprint283-boop.github.io/gekkoyoku/images/horigotatsu.jpg" width="900" height="1200" alt="鍋の準備ができた掘りごたつの個室" loading="lazy">
+          <img src="https://imprint283-boop.github.io/gekkoyoku/images/table-room.jpg" width="900" height="1200" alt="窓のある個室のテーブル席" loading="lazy">
         </div>
       </div>
       <div>
@@ -348,11 +431,11 @@
   <section id="enkai">
     <div class="wrap">
       <h2>宴会フロア（貸切できます）</h2>
-      <p class="sub">会社の忘年会や歓送迎会など、大人数の集まりには宴会フロアを。貸切のご相談も承ります。団体のご予約は、営業時間外や定休日のご利用もご相談いただけます。</p>
+      <p class="sub">会社の忘年会や歓送迎会など、大人数の集まりには宴会フロアを。貸切のご相談も承ります。団体のご予約は、営業時間外や定休日のご利用もご相談いただけます。<a href="enkai/">宴会・忘年会のご案内はこちら</a></p>
       <div class="floor">
-        <img src="https://imprint283-boop.github.io/gekkoyoku/images/floor.jpg" alt="長テーブルが並ぶ宴会フロア" loading="lazy">
-        <img src="https://imprint283-boop.github.io/gekkoyoku/images/counter.jpg" alt="カウンターとテーブル席のあるフロア" loading="lazy">
-        <img src="https://imprint283-boop.github.io/gekkoyoku/images/sofa.jpg" alt="ソファ席" loading="lazy">
+        <img src="https://imprint283-boop.github.io/gekkoyoku/images/floor.jpg" width="1000" height="1333" alt="長テーブルが並ぶ宴会フロア" loading="lazy">
+        <img src="https://imprint283-boop.github.io/gekkoyoku/images/counter.jpg" width="1000" height="1333" alt="カウンターとテーブル席のあるフロア" loading="lazy">
+        <img src="https://imprint283-boop.github.io/gekkoyoku/images/sofa.jpg" width="1000" height="1333" alt="ソファ席" loading="lazy">
       </div>
     </div>
   </section>
@@ -434,7 +517,7 @@
           <dt>席数</dt><dd>80席（完全個室：個室のテーブル席・掘りごたつの個室／宴会フロア：貸切可）</dd>
           <dt>創業</dt><dd>2004年</dd>
         </dl>
-        <figure class="front"><img src="https://imprint283-boop.github.io/gekkoyoku/images/gaikan.jpg" alt="月光浴の店の入口" loading="lazy"><figcaption>三日月の看板が目印です。</figcaption></figure>
+        <figure class="front"><img src="https://imprint283-boop.github.io/gekkoyoku/images/gaikan.jpg" width="1000" height="1333" alt="月光浴の店の入口" loading="lazy"><figcaption>三日月の看板が目印です。</figcaption></figure>
       </div>
       <iframe class="map" title="月光浴の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://maps.google.com/maps?q=33.3133041,130.5167326&z=17&output=embed"></iframe>
